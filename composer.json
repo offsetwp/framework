@@ -1,0 +1,56 @@
+{
+	"name": "offsetwp/framework",
+	"type": "library",
+	"description": "The WordPress framework",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jérôme Wohlschlegel",
+			"email": "jerome.wohlschlegel@gmail.com"
+		}
+	],
+	"homepage": "https://offsetwp.github.io",
+	"support": {
+		"issues": "https://github.com/offsetwp/framework/issues",
+		"source": "https://github.com/offsetwp/framework"
+	},
+	"keywords": [
+		"offsetwp",
+		"wordpress",
+		"framework",
+		"kernel",
+		"core",
+		"plugins",
+		"theme",
+		"mu-plugin"
+	],
+	"autoload": {
+		"psr-4": {
+			"OffsetWP\\": "src/"
+		},
+		"files": [
+			"src/helpers.php"
+		]
+	},
+	"require": {
+		"php": ">=8.5",
+		"symfony/dependency-injection": "^8.0"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.3"
+	},
+	"suggest": {
+		"symfony/config": "Required to use offsetwp/framework"
+	},
+	"minimum-stability": "stable",
+	"prefer-stable": true,
+	"scripts": {
+		"lint": "@php vendor/bin/phpcs"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		},
+		"sort-packages": true
+	}
+}

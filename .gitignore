@@ -1,0 +1,13 @@
+# OS et IDE files
+.DS_Store
+.idea/
+node_modules/
+*.sublime-projet
+*.sublime-workspace
+*.log
+
+# Ignore .env and config files as they are personal
+.env
+
+# Dependences
+vendor
